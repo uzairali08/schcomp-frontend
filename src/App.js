@@ -28,7 +28,7 @@ import AddSubjectiveTest from "./AddSubjectiveTest";
 import RegisteredScholars from "./RegisteredScholars";
 import RegisteredCourses from "./RegisteredCourses";
 import CourseMenu from "./CourseMenu";
-import PeerReviewAssessment from "./PeerReviewAssessment";PracticeTest
+import PeerReviewAssessment from "./PeerReviewAssessment";
 import PracticeTest from "./PracticeTest";
 import ReviewPeersWork from "./ReviewPeersWork";
 import Visualization from "./Visualization";

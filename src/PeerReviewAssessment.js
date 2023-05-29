@@ -134,7 +134,7 @@ function PeerReviewAssessment() {
 
     } catch (error) {
       console.error("Error:", error);
-      conosle.log(error.message);
+      // conosle.log(error.message);
     }
   }
 

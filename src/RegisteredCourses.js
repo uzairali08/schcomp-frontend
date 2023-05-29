@@ -61,7 +61,7 @@ function RegisteredCourses() {
 
   //view operation code ----->
   async function viewOperation(id) {
-    navigate;
+    // navigate;
   }
 
   var rowIndex = 1;

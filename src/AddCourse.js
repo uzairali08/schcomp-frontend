@@ -202,7 +202,7 @@ function AddCourse() {
     addcourse();
     setShow1(!show1);
     setShow2(!show2);
-    NextSection();
+    // NextSection();
   };
 
   const handle2 = () => {

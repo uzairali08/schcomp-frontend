@@ -177,7 +177,7 @@ function AddObjectiveTest() {
     let result = await fetch("http://localhost:8000/api/getquestionsdata/" + subjectId);
     result = await result.json();
     setQuestionsData(result);
-    console.warn(relatedAyaatsData);
+    // console.warn(relatedAyaatsData);
   }
 
   async function deletequestion(ayatId) {
