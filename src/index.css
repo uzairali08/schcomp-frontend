@@ -4,6 +4,7 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* Header Navbar CSS */
 .headerLink {
   padding: 10px;
   margin: 3px;
@@ -12,7 +13,6 @@
   background: #286029;
   color: #fff;
   border: 1px solid #286029;
-  /* border-bottom-color: #286029; */
 }
 
 .headerLink:hover {
@@ -24,21 +24,36 @@
 .headerAyat {
   margin-left: 0px;
 }
+/* Header Navbar CSS */
 
 
+/* Slider CSS  */
 .sliderText {
-  /* -webkit-text-stroke: 0.7px yellow; */
   color: white;
-  /* font-weight: bold; */
   font-size: 26pt;
   background-color: rgba(128, 128, 128, 0.50);
 }
 
+.slider-img {
+  height: 400px;
+  object-fit: cover;
+}
 
+@media (max-width: 768px) {
+  .sliderText {
+    font-size: 16pt;
+  }
+
+  .slider-img {
+    height: auto;
+  }
+}
+/* Slider CSS  */
+
+
+/* Homepage Services Cards  */
 .homepageCards {
   padding-bottom: 60px;
-  display: flex;
-  justify-content: center;
   margin-right: 45px;
   margin-left: 45px;
 }
@@ -58,11 +73,7 @@
   padding-top: 15px;
   padding-bottom: 10px;
   border-style: solid;
-  /* border-radius: 50px; */
   background: linear-gradient(45deg, #d5f8d8, #b3d1b6);
-  
-  /* box-shadow:  20px -20px 60px #a9c5ac,
-               -20px 20px 60px #e5ffe8; */
 }
 
 .cardBox h3 {
@@ -82,8 +93,6 @@
 .cardBox:hover {
   background: radial-gradient(#c7e8ca, #5d9c59);
   transform: scale(1.05);
-  /* transform: rotate(20deg); */
-  /* transform: translate(5px,5px, 15px, 15px); */
 }
 
 .cardLink {
@@ -104,6 +113,22 @@
   border: 1px solid #286029;
 }
 
+@media (max-width: 768px) {
+  .cardBox h3 {
+    font-size: 16pt;
+  }
+
+  .cardBox p {
+    font-size: 12pt;
+  }
+
+  .cardLink {
+    font-size: 13pt;
+  }
+}
+/* Homepage Services Cards  */
+
+/* Footer CSS  */
 .footer {
   /* background-color: #ddf7e3; */
   background-color: white;
@@ -123,6 +148,12 @@ h4 {
   font-size: 14pt;
   text-align: justify;
 }
+
+.text-sm-center {
+  text-align: center;
+}
+/* Footer CSS  */
+
 
 .subjectsPage {
   min-height: 500px;

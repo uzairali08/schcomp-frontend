@@ -28,31 +28,25 @@ function Header() {
     navigate("/");
   }
 
-  function buttonClick() {
-    navigate("/QuranicSubjects");
-    // alert("Quranic Subjects!");
-  }
-
   return (
     <div>
-      <Navbar expand="lg" className="p-0" style={{ backgroundColor: "white" }}>
-        <>
-          <Navbar.Brand href="http://localhost:3000/" className="mx-5">
-            <img src={logo1} className="logo" alt="" width={"150px"} />
-          </Navbar.Brand>
+      <Navbar collapseOnSelect expand="lg" className="p-0" style={{ backgroundColor: "white" }}>
+        <Navbar.Brand href="http://localhost:3000/" className="mx-5">
+          <img src={logo1} className="logo" alt="" width={"150px"} />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" className="me-4" />
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="m-auto">
             <img
               src={centerPicture}
               className="headerAyat"
               alt=""
-              width={"500px"}
+              width={"480px"}
             />
           </Nav>
           <Nav className="mr-auto mx-4">
             {user != null ? (
               <>
-                {/* <Link to={"/QuranicSubjects"} className="headerLink">Quranic Subjects</Link> */}
-
                 <span className="logoutspan">
                   {logo}
                   <NavDropdown className="dropdowntext" title={user.firstName}>
@@ -62,16 +56,16 @@ function Header() {
               </>
             ) : (
               <>
-                <Link to={"/RegisterProfile"} className="headerLink">
+                <Link to={"/RegisterProfile"} className="headerLink text-center">
                   Sign-up
                 </Link>
-                <Link to={"/LoginProfile"} className="headerLink">
+                <Link to={"/LoginProfile"} className="headerLink text-center">
                   Login
                 </Link>
               </>
             )}
           </Nav>
-        </>
+        </Navbar.Collapse>
       </Navbar>
     </div>
   );

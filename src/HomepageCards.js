@@ -4,6 +4,7 @@ import image1 from "./images/ssl.png";
 import image3 from "./images/cbt.png";
 import image2 from "./images/il.png";
 import { Link } from "react-router-dom";
+import { Col, Row } from "react-bootstrap";
 
 function HomepageCard() {
   return (
@@ -11,8 +12,9 @@ function HomepageCard() {
     <div className="cardSection">
         <h1 className="text-uppercase">Our Services</h1>
       </div>
-    <div className="homepageCards">
-      <Card className="cardBox w-25">
+    <Row className="homepageCards px-3">
+    <Col xs={11} md={6} lg={3} className="ms-auto ml-auto">
+      <Card className="cardBox">
         <Card.Img variant="top" src={image3} style={{ width: "100px" }} />
         <Card.Body>
           <Card.Title>
@@ -26,8 +28,10 @@ function HomepageCard() {
           <Link className="cardLink" to={`#vqs`}>Learn More</Link>
         </Card.Body>
       </Card>
+      </Col>
 
-      <Card className="cardBox w-25">
+      <Col xs={11} md={6} lg={3} className="ms-auto ml-auto">
+      <Card className="cardBox">
         <Card.Img variant="top" src={image1} style={{ width: "100px" }} />
         <Card.Body>
           <Card.Title>
@@ -42,8 +46,10 @@ function HomepageCard() {
           <Link className="cardLink" to={`#ssl`}>Learn More</Link>
         </Card.Body>
       </Card>
+      </Col>
 
-      <Card className="cardBox w-25">
+      <Col xs={11} md={6} lg={3} className="ms-auto ml-auto">
+      <Card className="cardBox">
         <Card.Img variant="top" src={image3} style={{ width: "100px" }} />
         <Card.Body>
           <Card.Title>
@@ -58,8 +64,10 @@ function HomepageCard() {
           <Link className="cardLink" to={`#cbt`}>Learn More</Link>
         </Card.Body>
       </Card>
+      </Col>
 
-      <Card className="cardBox w-25">
+      <Col xs={11} md={6} lg={3} className="ms-auto ml-auto">
+      <Card className="cardBox">
         <Card.Img variant="top" src={image2} style={{ width: "100px" }} />
         <Card.Body>
           <Card.Title>
@@ -74,8 +82,9 @@ function HomepageCard() {
           <Link className="cardLink" to={`#ils`}>Learn More</Link>
         </Card.Body>
       </Card>
+      </Col>
       
-    </div>
+    </Row>
     </>
   );
 }
