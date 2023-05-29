@@ -1,0 +1,65 @@
+/* .coursestable {
+    border-collapse: collapse;
+    outline: auto;
+    font-family: auto;
+}
+
+.coursestable th {
+  
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.coursestable td {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.coursestable td:first-child {
+    border-left: none;
+}
+
+.coursestable td:last-child {
+    border-right: none;
+}
+
+.operator {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.editBtn {
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-right: 5px;
+    color: white;
+    width: 60px;
+}
+
+.deleteBtn {
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-left: 5px;
+    width: 60px;
+    color: white;
+}
+
+.heading {
+    margin-right: 80px;
+    background-color: green;
+    border-radius: 4px;
+    margin-left: 80px;
+    
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.background {
+    background-color: #E2E2E2;
+    padding-top: 30px;
+    min-height: 700px;
+} */

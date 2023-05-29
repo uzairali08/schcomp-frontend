@@ -1,0 +1,30 @@
+.row {
+    width: 100%;
+    justify-content: center;
+}
+
+label {
+    display: flex;
+    margin: 5px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.box {
+    padding: 20px;
+    text-align: left;
+}
+
+
+
+/* .backbtn {
+    background-color: #286029;
+    border:none ;
+    border-radius: 3px;
+    margin-right: 5px;
+    color: white;
+    width: fit-content;
+    padding: 5px;
+} */

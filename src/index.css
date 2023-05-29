@@ -1,13 +1,938 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.headerLink {
+  padding: 10px;
+  margin: 3px;
+  font-size: 14pt;
+  text-decoration: none;
+  background: #286029;
+  color: #fff;
+  border: 1px solid #286029;
+  /* border-bottom-color: #286029; */
+}
+
+.headerLink:hover {
+  color: #286029;
+  background-color: #ddf7e3;
+  border: 1px solid #286029;
+}
+
+.headerAyat {
+  margin-left: 0px;
+}
+
+
+.sliderText {
+  /* -webkit-text-stroke: 0.7px yellow; */
+  color: white;
+  /* font-weight: bold; */
+  font-size: 26pt;
+  background-color: rgba(128, 128, 128, 0.50);
+}
+
+
+.homepageCards {
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  margin-right: 45px;
+  margin-left: 45px;
+}
+
+.cardSection{
+  padding-top: 50px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #286029;
+}
+
+.cardBox {
+  margin: 7px;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-style: solid;
+  /* border-radius: 50px; */
+  background: linear-gradient(45deg, #d5f8d8, #b3d1b6);
+  
+  /* box-shadow:  20px -20px 60px #a9c5ac,
+               -20px 20px 60px #e5ffe8; */
+}
+
+.cardBox h3 {
+  color: #286029;
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 18pt;
+  text-align: center;
+}
+
+.cardBox p {
+  font-size: 14pt;
+  padding: 3px;
+  text-align: justify;
+}
+
+.cardBox:hover {
+  background: radial-gradient(#c7e8ca, #5d9c59);
+  transform: scale(1.05);
+  /* transform: rotate(20deg); */
+  /* transform: translate(5px,5px, 15px, 15px); */
+}
+
+.cardLink {
+  font-size: 15pt;
+  padding: 6px;
+  margin: 1px;
+  text-decoration: none;
+  background: #286029;
+  border: 1px solid #286029;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.cardLink:hover {
+  color: #286029;
+  background-color: #c7e8ca;
+  border: 1px solid #286029;
+}
+
+.footer {
+  /* background-color: #ddf7e3; */
+  background-color: white;
+}
+
+.footerTopSection {
+  background-color: #286029;
+  color: whitesmoke;
+}
+
+.footerMiddleSection a {
+  text-decoration: none;
+}
+
+.footerMiddleSection p,
+h4 {
+  font-size: 14pt;
+  text-align: justify;
+}
+
+.subjectsPage {
+  min-height: 500px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #ddf7e3;
+  text-align: center;
+}
+
+.subjectsInput {
+  padding: 8px;
+  border: 2px solid #286029;
+  font-size: 16pt;
+  /* width: 25%; */
+  text-align: center;
+}
+
+
+.subjectsBtn {
+  padding: 10px;
+  margin: 3px;
+  font-size: 14pt;
+  text-decoration: none;
+  background: #286029;
+  color: #fff;
+  border: 1px solid #286029;
+}
+
+.subjectsBtn:hover {
+  color: #286029;
+  background-color: #ddf7e3;
+  border: 1px solid #286029;
+}
+
+.QuranicSubjectsTable {
+  text-align: left;
+}
+
+.QuranicSubjectsTable td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+.subjectContentPage {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #ddf7e3;
+  min-height: 500px;
+}
+
+.subjectTitle {
+  background-color: #286029;
+  color: white;
+  padding: 2px;
+}
+
+.subjectContetBtn {
+  padding: 10px;
+  margin: 3px;
+  font-size: 14pt;
+  text-decoration: none;
+  background: #286029;
+  color: #fff;
+  border: 1px solid #286029;
+}
+
+.subjectContetBtn:hover {
+  color: #286029;
+  background-color: whitesmoke;
+  border: 1px solid #286029;
+}
+
+
+/* .cardBox h4, button{
+  text-align: center;
+} */
+
+
+
+/* Nouman Code */
+
+
+.headingTile {
+  background-color: #286029;
+  padding: 2px;
+  color: white;
+  text-align: center;
+  border: 1px solid #286029;
+}
+
+.pageBackground {
+  background-color: #ddf7e3;
+}
+
+/* Subjects.js Page CSS */
+
+.subjectsEditBtn {
+  background-color: #286029;
+  border: 1px solid #286029;
+  padding: 2px;
+  width: 60px;
+  margin-right: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.subjectsEditBtn:hover {
+  background-color: #d5f8d8;
+  border: 1px solid #286029;
+  color: #286029;
+  font-weight: bold;
+}
+
+.subjectsDeleteBtn {
+  background-color: #DF2E38;
+  border: 1px solid #DF2E38;
+  padding: 2px;
+  width: 60px;
+  margin-right: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.subjectsDeleteBtn:hover {
+  background-color: white;
+  border: 1px solid #DF2E38;
+  color: #DF2E38;
+  font-weight: bold;
+}
+
+/* Edit subject CSS */
+.editBtnDiv{
+  text-align: center;
+}
+
+.savebtn {
+  background-color: #286029;
+  border: 1px solid #286029;
+  color: white;
+  width: 250px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.savebtn:hover {
+  color: #286029;
+  background-color: #d5f8d8;
+  border: 1px solid #286029;
+  font-weight: bold;
+}
+
+.editBackBtn {
+  background-color: #286029;
+  border: 1px solid #286029;
+  color: white;
+  text-decoration: none;
+  font-size: 12pt;
+  float: right;
+  padding: 12px;
+}
+
+.editBackBtn:hover {
+  color: #286029;
+  background-color: #d5f8d8;
+  border: 1px solid #286029;
+}
+
+/* Interactive Learning Page CSS */
+.ilNextBtn {
+  padding: 10px;
+  margin: 3px;
+  font-size: 14pt;
+  text-decoration: none;
+  background: #286029;
+  color: #fff;
+  border: 1px solid #286029;
+}
+
+.ilNextBtn:hover {
+  color: #286029;
+  background-color: #ddf7e3;
+  border: 1px solid #286029;
+}
+
+.ayaatDiv {
+  background-color: white;
+  padding: 20px;
+  font-size: 18pt;
+  text-align: center;
+  border: 1px solid #286029;
+}
+
+.ayaatDiv h3{
+  text-align: center;
+}
+
+.ilWelcomeScreen {
+  background-color: white;
+  text-align: left;
+  padding: 20px;
+  border: 1px solid #286029;
+}
+
+.urSideText {
+  text-align: right;
+}
+
+.engSideText {
+  text-align: left;
+}
+
+.ilQuesBtn {
+  padding: 10px;
+  margin: 3px;
+  font-size: 14pt;
+  text-decoration: none;
+  background: #286029;
+  color: #fff;
+  border: 1px solid #286029;
+}
+
+.ilQuesBtn:hover {
+  color: #286029;
+  background-color: #ddf7e3;
+  border: 1px solid #286029;
+}
+
+.quesDiv {
+  padding: 20px;
+  text-align: left;
+  margin-top: 30px;
+  font-size: 15pt;
+  background-color: white;
+}
+
+
+
+
+
+
+/* Roshaan css code from app.css */
+
+
+.score-section {
+  text-align: center;
+}
+
+.question-section {
+  width: 100%;
+  position: relative;
+}
+
+.question-count {
+  margin-bottom: 20px;
+}
+
+.question-count span {
+  font-size: 28px;
+}
+
+.question-text {
+  margin-bottom: 12px;
+}
+
+/* ANSWERS/RIGHT SECTION */
+.answer-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 
+button {
+  width: 100%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #286029;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  border: 5px solid #ffffff;
+  cursor: pointer;
+}
+ */
+
+.correct {
+  background-color: #2f922f;
+}
+
+/* 
+button:hover {
+  background-color: #286029;
+}
+
+button:focus {
+  outline: none;
+}
+
+button svg {
+  margin-right: 5px;
+}
+
+.actions {
+  display: flex;
+  margin-top: 15px;
+}
+
+.actions button {
+  background-color: #286029;
+  justify-content: center;
+}
+
+.actions button:hover {
+  background-color: #286029;
+  color: white;
+} */
+
+
+.navbar_wrapper a {
+  padding-left: 30px;
+}
+
+.note {
+  /* margin-top: 10px; */
+  text-align: center;
+  padding: 10px;
+  align-content: flex-end;
+  background: -webkit-linear-gradient(left, #286029, #286029);
+  color: rgb(255, 251, 251);
+  font-weight: bolder;
+  line-height: 80px;
+}
+
+.quizPage{
+  min-height: 500px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #ddf7e3;
+  text-align: center;
+}
+
+.quizTitle{
+  background-color: #286029;
+  color: white;
+  padding: 5px;
+  border: 1px solid #286029;
+}
+
+
+.form-content {
+  padding: 5%;
+  border: 1px solid #ced4da;
+  margin-bottom: 2%;
+  /* word-spacing: 10px;
+  word-break: normal; */
+}
+
+.register-content{
+  text-align: center;
+}
+
+.form-control {
+  border-radius: 1.5rem;
+}
+
+.btnSubmit {
+  border: 1px solid #286029;
+  padding: 10px;
+  width: 250px;
+  background: #286029;
+  color: #fff;
+  align-items: center;
+}
+
+.genderRadio {
+  display: -webkit-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* .radio {
+
+  align-items: flex-start;
+  padding-left: 10px;
+  margin-left: 1px;
+  left: 100px;
+  margin-left: 45%;
+  text-align: left;
+  width: fit-content;
+
+} */
+
+
+.loginn {
+  padding: 5%;
+  border: 1px solid #ced4da;
+}
+
+
+.quizbtn {
+  padding: 10px;
+  margin: 3px;
+  font-size: 14pt;
+  text-decoration: none;
+  background: #286029;
+  color: #fff;
+  border: 1px solid #286029;
+  text-align: center;
+}
+
+.quizbtn:hover {
+  color: #286029;
+  background-color: whitesmoke;
+  border: 1px solid #286029;
+}
+
+.quizContainer {
+  text-align: left;
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 2%;
+  justify-content: center;
+  border: 1px solid #286029;
+}
+
+.quizNPBtn{
+  text-align: center;
+}
+
+.quizPrevBtn{
+  padding: 10px;
+  margin: 3px;
+  font-size: 14pt;
+  text-decoration: none;
+  background: #286029;
+  color: #fff;
+  border: 1px solid #286029;
+  text-align: center;
+}
+
+.quizPrevBtn:hover {
+  color: #286029;
+  background-color: #ddf7e3;
+  border: 1px solid #286029;
+}
+
+.quizNextBtn{
+  padding: 10px;
+  margin: 3px;
+  font-size: 14pt;
+  text-decoration: none;
+  background: #286029;
+  color: #fff;
+  border: 1px solid #286029;
+  text-align: center;
+}
+
+.quizNextBtn:hover {
+  color: #286029;
+  background-color: #ddf7e3;
+  border: 1px solid #286029;
+}
+
+.signupBtn {
+  padding: 10px;
+  margin: 3px;
+  font-size: 14pt;
+  text-decoration: none;
+  background: #286029;
+  color: #fff;
+  border: 1px solid #286029;
+  text-align: center;
+
+  /* text-align: center;
+  background-color: #286029;
+  border: 1px solid #286029;
+  color: white;
+  width: 250px;
+  padding: 10px;
+  font-weight: bold; */
+}
+
+.signupBtn:hover {
+  color: #286029;
+  background-color: #ddf7e3;
+  border: 1px solid #286029;
+}
+
+.loginBtn {
+  text-align: center;
+  border: 1px solid #286029;
+  background-color: #286029;
+}
+
+
+/* Quizz class CSS */
+
+
+
+
+
+
+/* Register and Login Profile CSS */
+
+.loginProfile {
+  background-color: #ddf7e3;
+
+}
+
+.loginProfileContent {
+  border-radius: 50px;
+
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 20px 20px 60px #d9d9d9,
+    -20px -20px 60px #ffffff;
+}
+
+.loginContainer {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+
+/* Add Courses CSS */
+
+.addCoursePage {
+  min-height: 500px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #ddf7e3;
+}
+
+.shortCourseDetail {
+  background-color: white;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  border: 1px solid #286029;
+}
+
+.addCourseHeader {
+  background-color: #286029;
+  padding: 2px;
+  color: white;
+  text-align: center;
+  border: 1px solid #286029;
+}
+
+.addRelatedAyaatBtn{
+  text-align: center;
+}
+
+.subjectSaveBtn {
+  padding: 10px;
+  margin: 3px;
+  font-size: 14pt;
+  text-decoration: none;
+  background: #286029;
+  color: #fff;
+  border: 1px solid #286029;
+}
+
+.subjectSaveBtn:hover {
+  color: #286029;
+  background-color: #ddf7e3;
+  border: 1px solid #286029;
+}
+
+/* CSS for Header class profile logo  */
+.logoutspan {
+  margin-top: 4px;
+  padding-left: 2px;
+  padding-top: 4px;
+  border: 1px solid #286029;
+  border-radius: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  margin: inherit;
+}
+
+.profilelogo {
+  /* margin-top: 2px; */
+  margin-left: 3px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+
+
+
+
+
+/* Peer Review Assessment CSS */
+.peerReviewPage{
+  min-height: 500px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #ddf7e3;
+}
+
+.peerReviewHeader{
+  background-color: #286029;
+  padding: 2px;
+  color: white;
+  text-align: center;
+  border: 1px solid #286029;
+}
+
+.peerReviewContainer{
+  background-color: white;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  border: 1px solid #286029;
+}
+
+.peerReviewQuestionContainer{
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.peerReviewRubricContainer{
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.peerReviewBtn{
+  font-size: 14pt;
+  text-decoration: none;
+  background: #286029;
+  color: #fff;
+  border: 1px solid #286029;
+  text-align: center;
+}
+
+.peerReviewBtn:hover{
+  color: #286029;
+  background-color: #ddf7e3;
+  border: 1px solid #286029;
+}
+
+
+/* Result page CSS */
+.resultPage{
+  min-height: 500px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #ddf7e3;
+}
+
+.resultHeader{
+  background-color: #286029;
+  padding: 2px;
+  color: white;
+  text-align: center;
+  border: 1px solid #286029;
+}
+
+.resultContainer{
+  background-color: white;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  border: 1px solid #286029;
+}
+
+.resultPercentage{
+  color: #286029;
+  text-align: center;
+}
+
+.resultTableHeader{
+  background-color: #286029;
+  color: #fff;
+}
+
+.resultSuccessHeader{
+  color: #286029;
+  text-align: center;
+}
+
+.resultFailHeader{
+  color:#DF2E38;
+  text-align: center;
+}
+
+.resultBtn{
+  font-size: 14pt;
+  text-decoration: none;
+  background: #286029;
+  color: #fff;
+  border: 1px solid #286029;
+  text-align: center;
+  width: 25%;
+}
+
+.resultBtn:hover{
+  color: #286029;
+  background-color: #ddf7e3;
+  border: 1px solid #286029;
+}
+
+
+
+/* Course Menu Cards */
+.courseMenuBtns{
+  background-color:#286029;
+  padding-top: 5px;
+  padding-left: 60px;
+  padding-bottom: 5px;
+  padding-right: 60px;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #286029;
+}
+
+.courseMenuBtns:hover{
+  background-color: #fff;
+  border: 2px solid #286029;
+  color: #286029;
+}
+
+
+
+/* Custom Alert CSS */
+.custom-alert-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-alert {
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.custom-alert h2 {
+  margin-top: 0;
+}
+
+.custom-alert button {
+  background: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+
+/* Loading screen CSS */
+.loader {
+  background-color: #ddf7e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 600px;
+}
+
+.loader-text {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+.loader-bar {
+  width: 30%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  animation: loader-bar-animation 2s ease-in-out infinite;
+}
+
+@keyframes loader-bar-animation {
+  0% {
+    /* transform: translateX(-100%) rotate(270deg); */
+    transform: translateX(-100%);
+  }
+
+  50% {
+    /* transform: translateX(100%) rotate(-90deg); */
+    transform: translateX(100%);
+  }
+
+  100% {
+    /* transform: translateX(-100%) rotate(270deg); */
+    transform: translateX(-100%);
+  }
 }

@@ -1,0 +1,25 @@
+.coursestable {
+    border-collapse: collapse;
+    outline: auto;
+    font-family: auto;
+}
+
+
+
+
+.heading {
+    background-color: #286029;
+    color: white;
+    border-radius: 4px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+} 
+
+/* .background {
+    background-color: #E2E2E2;
+    padding-top: 30px;
+    min-height: 700px;
+} */
